@@ -45,8 +45,7 @@ int main(int argc,char** argv){
       //initialize the array randomly
       for(int i=0;i<n;i++) 
       {
-          d[i] = distribute(generator); 
-          
+          d[i] = distribute(generator);
       }
       
       start = std::chrono::high_resolution_clock::now();
@@ -56,7 +55,6 @@ int main(int argc,char** argv){
       end = std::chrono::high_resolution_clock::now();
       
       duration += std::chrono::duration_cast<std::chrono::microseconds>( end - start ).count();
-      
     }
     
     //compute the average running time for the problem size
